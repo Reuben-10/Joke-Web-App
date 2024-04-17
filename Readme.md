@@ -43,7 +43,8 @@ npm start
 
 ## Screenshot
 
-![Desktop View](public/assets/Desktop View.png)
-![Mobile View](public/assets/Mobile view.png)
+![alt text](public/assets/Desktop View.png)
+![alt text](public/assets/Mobile view.png)
+
 
 
