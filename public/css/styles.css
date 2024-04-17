@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grandstander", cursive;
+}
+
+body{
+    background: #E1F16B;
+}
+
+.container{
+    background-color: #E598D8;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+    font-family: "Gluten", cursive;
+}
+
+h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: #272727;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+blockquote{
+    font-size: 25px;
+    min-height: 110px;
+}
+
+blockquote::before, blockquote::after{
+    content: '"';
+}
+
+span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #272727;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.container div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.container button{
+    background: #E1F16B;
+    color: #2C346B;
+    border-radius: 25px;
+    border: 1px solid ;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.container button svg{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.container button:nth-child(2){
+    background: #3e3c3c;
+    color: #FFF559;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; 
+    }
+
+    h2 {
+        font-size: 28px; 
+    }
+
+    blockquote {
+        font-size: 20px; 
+    }
+
+    .container div {
+        flex-wrap: wrap;
+    }
+}

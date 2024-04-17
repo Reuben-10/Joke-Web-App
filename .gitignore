@@ -1,0 +1,7 @@
+# IDE settings
+.idea/
+.vscode/
+
+# Dependency directories
+node_modules/
+npm-debug.log
